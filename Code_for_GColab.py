@@ -34,9 +34,6 @@ df = df.dropna()
 X = df.drop(columns=['FloodProbability'])  
 y = df['FloodProbability']  
 
-# Encode categorical data jika ada 
-# Contoh: X = pd.get_dummies(X)
-
 # Scale data menggunakan MinMaxScaler
 scaler = MinMaxScaler()
 X_scaled = scaler.fit_transform(X)
